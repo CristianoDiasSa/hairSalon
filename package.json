@@ -1,0 +1,24 @@
+{
+  "name": "hair_salon",
+  "version": "1.0.0",
+  "description": "Hair salon project, will work as a sort of middleware between customer and owner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianoDiasSa/hairSalon.git"
+  },
+  "keywords": [
+    "hair_salon",
+    "whatsapp",
+    "customer"
+  ],
+  "author": "Cristiano Dias sa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CristianoDiasSa/hairSalon/issues"
+  },
+  "homepage": "https://github.com/CristianoDiasSa/hairSalon#readme"
+}

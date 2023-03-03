@@ -1,9 +1,13 @@
-const client = require('twilio')(accountSid, authToken);
+//const client = require('twilio')(accountSid, authToken);
 
 var express = require('express');
 var port = process.env.PORT || 3000;
 var app = express();
 
+app.get("/", function (req, res) {
+    res.sendFile(__dirname + '/views/index.html');
+  });
+/*
 function sendMessageToWhatsApp(number, message) {
   client.messages
     .create({
@@ -14,9 +18,10 @@ function sendMessageToWhatsApp(number, message) {
     .then(message => console.log(`Message sent to ${message.to}`))
     .catch(error => console.log(error));
 }
-
+*/
 // Express route handler for the form submission
 app.post('/submit-form', (req, res) => {
+  /*
   const name = req.body.name;
   const email = req.body.email;
   const message = `Name: ${name}\nEmail: ${email}`;
@@ -25,6 +30,10 @@ app.post('/submit-form', (req, res) => {
   sendMessageToWhatsApp(phoneNumber, message);
 
   res.send('Message sent!');
+  */
+ res.json({
+  "Status": "Success"
+ });
 });
 
 
